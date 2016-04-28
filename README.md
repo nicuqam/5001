@@ -1,6 +1,6 @@
  GRISOUWiki2 
  Continuous review reporter vApril2016
- =====================================
+--------------------------------------
  
  Ce projet utilise le code-cadre Meteor v1.3 Afin de lancer cette application, 
  il est nécessaire de faire l'installation de Meteor et de lancer l'application 
