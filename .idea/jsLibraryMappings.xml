@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="file://$PROJECT_DIR$/imports/ui/body.js" libraries="{ECMAScript 6, Meteor project library, WebGL}" />
+    <file url="PROJECT" libraries="{meteor-packages-auto-import-browser}" />
+  </component>
+</project>

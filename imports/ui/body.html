@@ -1,0 +1,59 @@
+<body>
+<div class="container">
+
+    <header>
+        <h3>GRISOU</h3>
+        <h1>Continuous review reporter vApril2016</h1>
+
+        <form class="search">
+            <input type="text" name="text" id="user" placeholder="Type a username to search for contributions"/>
+            <select type="text" name="url" id="url">
+                <option value="http://en.wikipedia.org" selected="selected">http://en.wikipedia.org</option>
+                <option value="http://wiki.grisou.ca">http://wiki.grisou.ca</option>
+            </select>
+        </form>
+        <button id="search">Search</button>
+    </header>
+
+    <div id="container">
+        <div id="resultsContainer">
+            <div id="results">
+                <ul class="tabs" data-tab>
+                    <li class="tab-title active"><a href="#list_articles">Articles</a></li>
+                    <li class="tab-title"><a href="#list_talks">Talks</a></li>
+                </ul>
+                <div class="tabs-content">
+                    <div class="content active panel" id="list_articles">
+                        <div id="articles">
+                            <ul>
+                                {{#each articles}}
+                                {{> article}}
+                                {{/each}}
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content" id="list_talks">
+                        <div id="talks">Cette section est en développement</div>
+                    </div>
+                </div>
+                <div>
+                    <button id="loadMoreResults" class="hide disabled">Load more results</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="infosContainer">
+            <div id="info_articles">
+                <ul class="tabs" data-tab>
+                    <li class="tab-title active"><a href="#detail_container">Details</a></li>
+                    <li class="tab-title"><a href="#article_container">Article</a></li>
+                </ul>
+                <div class="tabs-content">
+                    <div class="content active" id="detail_container">{{>details}}</div>
+                    <div class="content" id="article_container">{{>articleTextTemplate}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
